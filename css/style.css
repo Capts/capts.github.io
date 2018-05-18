@@ -1,0 +1,42 @@
+.kk{
+	border:2px solid red;
+}
+body{
+	margin:0;
+	padding:0;
+	background: url(../img/bg.jpg) no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+}
+
+.content{
+	width: 450px;
+	background: rgba(0,0,0,0.4);
+	margin:auto;
+	margin-top: 5%;
+	text-align: center;
+	color:white;
+	font-family: 'Century Gothic', sans-serif;
+	padding:20px;
+}
+.content-img{
+	padding:10px;
+	border-radius: 50%;
+	width:150px;
+	height:150px;
+}
+ul{
+	margin: 0;
+	padding:0;
+}
+.content li{
+	display: inline-block;
+	list-style: none;
+	font-size: 40px;
+	margin:8px;
+}
+.content li a{
+	color:white;
+}
