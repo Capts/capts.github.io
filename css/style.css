@@ -88,7 +88,7 @@ body{
 }
 .content{
 	width: 450px;
-	background: rgba(0,0,0,0.4);
+	background: rgba(8,5,4,0.2);
 	margin:auto;
 	margin-top: 10%;
 	text-align: center;
@@ -117,6 +117,8 @@ body{
 	/*transform: translate(50%, -50%);*/
 	display: none;
 }
+
+
 .btn{
 	display:inline-block;
 	font-weight:400;
@@ -128,6 +130,8 @@ body{
 .imgContainer a:hover{
 	color:white;
 	text-decoration: none;
+	font-size: 18px;
+	color:#215cba;
 }
 .content-img{
 	padding:10px;
@@ -189,6 +193,15 @@ ul{
     	font-size: 13px;
     	padding:20px;
     }
+
+    .imgContainer .buttonNavLeft{
+		top: 15%;
+		left: 20%;
+    }
+    .imgContainer .buttonNavRight{
+		top: 15%;
+		right: 20%;
+	}
 }
 
 
@@ -219,18 +232,47 @@ ul{
     	font-size: 13px;
     }
     .imgContainer .buttonNavLeft{
-		top: 15%;
+		top: 20%;
 		left: 28%;
     }
     .imgContainer .buttonNavRight{
-		top: 15%;
+		top: 20%;
 		right: 28%;
 	}
 }
 
 @media screen and (min-width: 769px) and (max-width: 1824px) {
-    .content{
-    	margin-top: 20%;
+   
+    .firstContent h2{
+		font-size: 18px;
+		letter-spacing: 4px;
+    }
+    .firstContent p{
+		font-size: 16px;
+		letter-spacing: 1px;
+		text-align: center;
+    }
+     .content{
+    	margin-top: 8%;
     	width: 450px; 
     }
+    .content h1{
+    	padding-top: 15px;
+    	font-size: 18px;
+    }
+    .content h5{
+    	font-size: 13px;
+    	letter-spacing: 1px;
+    }
+    .content p{
+    	font-size: 13px;
+    }
+    .imgContainer .buttonNavLeft{
+		top: 20%;
+		left: 38%;
+    }
+    .imgContainer .buttonNavRight{
+		top: 20%;
+		right: 38%;
+	}
 }
