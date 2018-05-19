@@ -10,15 +10,33 @@
 	<link rel="stylesheet" href="css/animate.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
+	
+	<div class="loader">
+	</div>
+	<div class="firstContent">
+		<h2>Kevin Broncano</h2>
+		<p>PHP Web Developer</p>
+	</div>
+
 	<div class="content">
-		<img class="content-img animated zoomIn" src="img/picture.jpg" alt="">
+		<div class="imgContainer">
+			<div class="buttonNavLeft">
+				<a href="" class="btn btn-customized"><i class="fa fa-home fa-2x"></i></a> <br>
+				<a href="" class="btn btn-customized"><i class="fa fa-mobile fa-2x"></i></a> <br>
+			</div>
+			<div class="buttonNavRight">
+				<a href="" class="btn btn-customized"><i class="fa fa-suitcase  fa-2x"></i></a> <br>
+				<a href="" class="btn btn-customized"><i class="fa fa-user fa-2x"></i></a> <br>
+			</div>	
+			<img class="content-img animated zoomIn" src="img/picture.jpg" alt="">
+		</div>
 		<h1>Kevin Broncano</h1>
-		<h5>PHP Web Developer</h5>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores quis, omnis. Culpa consectetur necessitatibus molestiae est deleniti! Dolores qui mollitia reprehenderit deserunt, laboriosam sit esse velit praesentium quas ipsum atque.</p>
+		<h5> Php Web Developer</h5>
+		<p>I am a PHP Developer and a human being, I do love writing <kbd style="color:green;">codes</kbd> and eating at the same time. I am a hard user of PHP Framework like Laravel and <span class="label">Bootstrap</span> for design. You can hover my photo for humanely navigation to know more about me. Looking forward on working with you.  </p>
 
 		<ul>
 			<li>
@@ -39,11 +57,34 @@
 <script>
 	$(document).ready(function() {
 		$('li').mouseover(function(){
-			$(this).addClass('animated jello');
+			$(this).addClass('animated pulse');
 		});
 		$('li').mouseout(function(){
-			$(this).removeClass('animated jello');
+			$(this).removeClass('animated pulse');
 		});
+		$('.imgContainer').mouseover(function() {
+			$('.buttonNavRight').removeClass('animated bounceOutRight');
+			$('.buttonNavLeft').removeClass('animated bounceOutLeft');
+			$('.buttonNavRight').show().addClass('animated bounceInRight');
+			$('.buttonNavLeft').show().addClass('animated bounceInLeft');
+
+
+		});
+		$('.imgContainer').mouseout(function() {
+			$('.buttonNavRight').removeClass('animated bounceOutRight');
+			$('.buttonNavLeft').removeClass('animated bounceOutLeft');
+			$('.buttonNavRight').addClass('animated bounceOutRight');
+			$('.buttonNavLeft').addClass('animated bounceOutLeft');
+		});
+
+		setTimeout(function(){
+			$('.loader').fadeOut();
+			$('.firstContent').addClass('animated fadeOutX').fadeOut();
+		}, 3000);
+
+		setTimeout(function(){
+			$('.content').fadeIn();
+		}, 3500);
 	});
 </script>
 </body>
