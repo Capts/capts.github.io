@@ -31,40 +31,41 @@
 		</a>
 	</div>
 	<div class="content">
-		
-		<div class="imgContainer">
-			<img class="content-img animated zoomIn" src="img/picture.jpg" alt="">
+		<!-- Index Card -->
+		<div class="index">
+			<div class="imgContainer">
+				<img class="index-img animated zoomIn" src="img/picture.jpg" alt="">
 
+			</div>
+			<h1>Kevin Broncano</h1>
+			<h5> Web Developer</h5>
+			<p>I am a PHP Developer and a human being, I do love writing <kbd>codes</kbd> and eating at the same time. I am a hard user of PHP Framework like Laravel and <span class="label">Bootstrap</span> for design. Feel free to navigate and know more about me. Looking forward on working with you.  </p>
+
+			<ul>
+				<li>
+					<a href="https://github.com/Capts"><i class="fa fa-github-square"></i> </a>
+				</li>
+				<li>
+					<a href="https://ph.linkedin.com/in/kevin-broncano-0605a0b3"><i class="fa fa-linkedin-square"></i></a>
+				</li>
+				<li>
+					<a href="https://facebook.com/kibyungski"><i class="fa fa-facebook-square"></i></a>
+				</li>
+				<li>
+					<a href=""><i class="fa fa-google-plus-square"></i></a>
+				</li>
+			</ul>
 		</div>
-		<h1>Kevin Broncano</h1>
-		<h5> Web Developer</h5>
-		<p>I am a PHP Developer and a human being, I do love writing <kbd>codes</kbd> and eating at the same time. I am a hard user of PHP Framework like Laravel and <span class="label">Bootstrap</span> for design. Feel free to navigate and know more about me. Looking forward on working with you.  </p>
-
-		<ul>
-			<li>
-				<a href="https://github.com/Capts"><i class="fa fa-github-square"></i> </a>
-			</li>
-			<li>
-				<a href="https://ph.linkedin.com/in/kevin-broncano-0605a0b3"><i class="fa fa-linkedin-square"></i></a>
-			</li>
-			<li>
-				<a href="https://facebook.com/kibyungski"><i class="fa fa-facebook-square"></i></a>
-			</li>
-			<li>
-				<a href=""><i class="fa fa-google-plus-square"></i></a>
-			</li>
-		</ul>
-		
 	</div>
-
 
 <script>
 	$(document).ready(function() {
 		//navigation
-		if (window.location.href=="capts.github.io") {
+		var url = window.location.href;
+		if (url == "https://capts.github.io/") {
 			$('.btnNavL').hide();
 		}else{
-			
+
 		}
 		$('.btnNavR').mouseover(function(e) {
 			$('.spanRight').show().addClass('animated slideInRight');

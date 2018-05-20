@@ -93,37 +93,60 @@ body{
 	margin-top: 10%;
 	text-align: center;
 	color:white;
-	padding:20px;
 	display: none;
+	padding:10px;
+}
+.content .index{
+	background:rgba(0,0,0,0.5); 
+	width: auto;
+	padding:20px;
 }
 
-.content p{
+.content .index p{
 	padding-top: 20px;
 	text-align: justify;
 }
 
-.content h1{
+.content .index h1{
 	letter-spacing: 5px;
 	font-weight: 100;
 	padding-top: 5px;
 }
-ul{
+.content ul{
 	margin: 0;
 	padding:0;
 }
-.content li{
+.content .index li{
 	display: inline-block;
 	list-style: none;
 	font-size: 40px;
 	margin:8px;
 	
 }
-.content li a{
+.content .index li a{
 	color:white;
 }
-.imgContainer a{
+.content .index .imgContainer a{
 	color:white;
 }
+.content .imgContainer a:hover{
+	color:white;
+	text-decoration: none;
+	font-size: 18px;
+	color:#215cba;
+}
+.content .index-img{
+	padding:10px;
+	border-radius: 50%;
+	width:145px;
+	height:150px;
+	/*border:1px solid white;*/
+}
+
+
+
+
+/*Navigation*/
 
 .btnNav{
 	position: absolute;
@@ -161,19 +184,6 @@ ul{
 	background-color:transparent;
 }
 
-.imgContainer a:hover{
-	color:white;
-	text-decoration: none;
-	font-size: 18px;
-	color:#215cba;
-}
-.content-img{
-	padding:10px;
-	border-radius: 50%;
-	width:145px;
-	height:150px;
-	/*border:1px solid white;*/
-}
 
 
 
@@ -192,32 +202,24 @@ ul{
 		font-size: 10px;
 		text-align: center;
     }
-    .content{
+    .index{
     	background-color: #009688;
     	width:auto;
     }
-    .content h1{
+    .index h1{
     	padding-top: 17px;
     	font-size: 17px;
     	letter-spacing: 3px;
     }
-    .content h5{
+    .index h5{
     	font-size: 14px;
     	letter-spacing: 1px;
     }
-    .content p{
+    .index p{
     	font-size: 13px;
     	padding:20px;
     }
 
-    .imgContainer .buttonNavLeft{
-		top: 15%;
-		left: 20%;
-    }
-    .imgContainer .buttonNavRight{
-		top: 15%;
-		right: 20%;
-	}
 }
 
 
@@ -232,29 +234,22 @@ ul{
 		letter-spacing: 1px;
 		text-align: center;
     }
-    .content{
+    .index{
     	margin-top: 20%;
     	width: 350px; 
     }
-    .content h1{
+    .index h1{
     	padding-top: 15px;
     	font-size: 18px;
     }
-    .content h5{
+    .index h5{
     	font-size: 13px;
     	letter-spacing: 1px;
     }
-    .content p{
+    .index p{
     	font-size: 13px;
     }
-    .imgContainer .buttonNavLeft{
-		top: 20%;
-		left: 28%;
-    }
-    .imgContainer .buttonNavRight{
-		top: 20%;
-		right: 28%;
-	}
+ 
 }
 
 @media screen and (min-width: 769px) and (max-width: 1824px) {
@@ -268,27 +263,20 @@ ul{
 		letter-spacing: 1px;
 		text-align: center;
     }
-     .content{
+     .index{
     	margin-top: 8%;
     	width: 450px; 
     }
-    .content h1{
+    .index h1{
     	padding-top: 15px;
     	font-size: 18px;
     }
-    .content h5{
+    .index h5{
     	font-size: 13px;
     	letter-spacing: 1px;
     }
-    .content p{
+    .index p{
     	font-size: 13px;
     }
-    .imgContainer .buttonNavLeft{
-		top: 20%;
-		left: 38%;
-    }
-    .imgContainer .buttonNavRight{
-		top: 20%;
-		right: 38%;
-	}
+
 }
