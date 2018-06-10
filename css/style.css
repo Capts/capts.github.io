@@ -8,6 +8,8 @@
 .sorry h2{
 	color:#C51162;
 	font-size: 18px;
+	letter-spacing: 2px;
+	line-height: 30px;
 }
 
 .circle a:hover{
@@ -229,7 +231,14 @@ body{
 /*media queries*/
 
 @media only screen and  (min-width : 320px) and  (max-width : 480px) {
-
+	.sorry h2{
+		font-size: 12px;
+		text-align: justify;
+	}
+	.sorry i.fa-4x{
+		font-size: 100px;
+		text-align: center;
+	}
 	.firstContent h2{
 		font-size: 14px;
 		text-align: center;
