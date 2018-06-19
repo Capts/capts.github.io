@@ -6,7 +6,8 @@
 	transform: translate(-50%, -50%);
 }
 .sorry h2{
-	color:#C51162;
+	/**color:#C51162; **/
+	color:#f2301f; 
 	font-size: 18px;
 	letter-spacing: 2px;
 	line-height: 30px;
