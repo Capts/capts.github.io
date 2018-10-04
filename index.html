@@ -5,67 +5,71 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Kevin Broncano</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="js/jquery.min"></script>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-	<div class="sorry">
-		<h2>
-			<i class="fa fa-exclamation-triangle fa-4x" style="color:#b71c1c"></i> <br> <span style="text-align: justify;"> 
-				<kbd>Opps!</kbd> I might have done some changes to the portfolio and unfortunately overlooked something that might have caused this red-colored thing that you're reading. 
-				<br><br> 
-				<small>try to look from my alternative profile for now! </small> <br> <br>
-				<span class="circle">
-					<a href="https://www.linkedin.com/in/kevin-broncano-0605a0b3/" style="color:#0077B5"><i class=" fa-2x fa fa-linkedin-square"></i></a>
-					<a href="https://facebook.com/kibyungski" style="color: #3B5998 "><i class=" fa-2x fa fa-facebook-square"></i></a>
-				</span>
-			</span>
-		</h2>
-		<span><address>- Kevin Broncano</address></span>
-	</div>
+	<aside id="slide-menu">
+		<div class="user-img">
+			<img src="https://d39l2hkdp2esp1.cloudfront.net/img/eps/E2789_2x/c/E2789_01.jpg?20150926020338" alt="">
+		</div>
+		<div class="user-name">
+			<p><strong>Kevin Broncano</strong></p>
+			<span>FullStack Web Developer</span>
+		</div>
+		<!-- <hr width="80%">    -->
+		<div class="navigation-menu">
+			<ul>
+				<li class="menu-items">
+					<a href="#">
+						<span><i class="fa fa-male"> </i></span> 
+						<br>About
+					</a>
+				</li>
+				<li class="menu-items">
+					<a href="#">
+						<span><i class="fa fa-check"> </i></span> 
+						<br>Skill
+					</a>
+				</li>
+				<li class="menu-items">
+					<a href="#">
+						<span><i class="fa fa-phone"></i></span> 
+						<br>Contact
+					</a>
+				</li>
+			</ul>
+		</div>
+		<!-- Social Icons -->
+		<div class="social-icons">
+			<a href="#"><i class="fa fa-facebook"></i>Facebook</a>
+			<a href="#"><i class="fa fa-instagram"></i>Instagram</a>
+			<a href="#"><i class="fa fa-linkedin"></i>LinkedIn</a>
+			<a href="#"><i class="fa fa-google-plus"></i>Google</a>
+		</div>
+		<!-- year -->
+		<div class="year">
+			<small>Designed &times 2018 - 2019</small>
+		</div>
+	</aside>
+	<main>
+		<div class="container ">
+			<div class="content ">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus laboriosam harum omnis temporibus quisquam, iure, ullam deleniti, sunt quos labore beatae dicta sequi fugiat ea. Ipsa, quo incidunt. Rem, error.
+			</div>
+			<div class="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus dolorem voluptate, quam quo aliquid officiis? Voluptate iure vitae laudantium voluptatibus quisquam sint labore fugiat dolores porro eveniet. Rem nemo, quia.</div>
+			<div class="content ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis qui sequi nemo, nam optio inventore iste rem, adipisci aut. Voluptas modi qui sit cum suscipit magni saepe, architecto quod at?</div>
+
+		</div>
+		
+	</main>
+	
 
 
 
-	<script>
-		$(document).ready(function() {
-		//navigation
-		var url = window.location.href;
-		if (url == "https://capts.github.io/") {
-			$('.btnNavL').hide();
-		}else{
-
-		}
-		$('.btnNavR').mouseover(function() {
-			$('.spanRight').addClass('animated flipInX').show();
-		});
-		$('.btnNavR').mouseout(function() {
-			$('.spanRight').hide();
-		});
-
-
-
-		//mini icons animation
-		$('li').mouseover(function(){
-			$(this).addClass('animated pulse');
-		});
-		$('li').mouseout(function(){
-			$(this).removeClass('animated pulse');
-		});
-		setTimeout(function(){
-			$('.loader').fadeOut();
-			$('.firstContent').addClass('animated fadeOutX').fadeOut();
-		}, 1000);
-
-		setTimeout(function(){
-			$('.content').fadeIn();
-			$('.btnNav').fadeIn();
-		}, 1500);
-	});
-	</script>
 </body>
 </html>
