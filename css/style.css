@@ -3,7 +3,8 @@
 	margin: 0;
 }
 body{
-	background:#111;font-family: 'Audiowide', cursive;
+	background:#111;
+	font-family: 'Roboto', sans-serif;
 	font-weight: lighter;
 	color:silver;
 }
@@ -75,109 +76,43 @@ main {
 	width: 98vw;
 	height: 90vh;
 }
-main .profile {
-	text-align: center;
-	align-self: end;
-	/*background:rgba(0,9,8,0.3);*/
-	padding-bottom: 50px;
-}
-.profile img {
-	height: 300px;
-	width: auto;
-	border-radius: 10%;
-	margin-bottom: 31px;
-}
-.profile p {
-	padding:35px;
-	padding-bottom: 0;
-	font-size: 34px;
-	letter-spacing: 1px;
-}
-.profile small {
-	padding:5px;
-	font-size: 15px;
-	text-align: center;
-	letter-spacing: 2px;
-
-}
-
-
-main .main-nav {
-	align-self: end;
-	padding: 20px;
-	justify-content: start;
-}
-
-.main-nav ul {
-	list-style: none;
-	margin:5px;
-	padding:2px;
-}
-.main-nav ul li{
-	padding:0;
-	margin-bottom: 12px;
-	border-left: 5px solid #aa570d;
-	background:rgba(0,9,8,0.1);
-	/*border-radius: 0px 20px 50px;*/
-}
-.main-nav ul a{
-	/*color:#d86f11;*/
-	color:gray;
-	font-size: 18px;
-	text-decoration: none;
-	letter-spacing:3px;
-	font-family: 'Kodchasan', sans-serif;
-	line-height: 1.6;
-}
-.main-nav ul li a{
-	margin: 0px;
-	display: block; width: auto; height: 100%;
-	padding:10px;
-}
-.main-nav a.active {
-	/*font-size: 21px;*/
-	color:#aa570d;
-}
-.main-nav li.active {
-	background: rgba(0, 0, 0, 4);
-	border-left: 5px solid red;
-}
-.main-nav li:hover {
-	background: rgba(0,0,0,0.5);
-	/*border-left: 5px solid red;*/
-}
-
-
-main .content {
-	/*border:1px dashed white;*/
-	align-content: center;
-}
-
-.content > .tabcontent{
-    /*border:1px solid red;*/
-    display: none;
-    height: 95%;
-    margin-top: 5px;
-    padding: 10px;
-    text-align: center;
-    /*background-color: rgba(0,0,0,1);*/
-
-}
-.tabcontent h2 {
-	line-height: 32px;
-	font-family: 'Kodchasan', sans-serif;
-
-}
-.tabcontent p {
-	line-height: 32px;
-	padding:25px;
-	font-size: 21px;
-	/*text-align: justify;*/
-	padding-top: 25%;
-	font-family: 'Kodchasan', sans-serif;
-
-}
-
 
 
 /*end main*/
+
+
+
+/*Slider Sidebar, Sidebar*/
+	#ham {
+		position: absolute;
+		left: 260px;
+		z-index: 10000;
+		top:5px;
+	}
+    #slide-menu{
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        background-color: #1d1e1a;
+        height: 100%;
+        width:250px;
+    }
+    .menu-items ul{
+        list-style: none;
+        padding: 0;
+        display: block
+    }
+    
+    .menu-items li a{
+        color: #2E3734;
+        display: block;
+        padding: 15px 30px;
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+    .treeview-menu::after{
+        content:">";
+        font-size: 15px;
+        float:right;
+    }
