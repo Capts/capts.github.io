@@ -8,11 +8,15 @@
 	<title>Kevin Broncano</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
+
 	<style>
 		html, body {
 			height: 100%;
 			background-color: #fff;
 			overflow:hidden;
+			font-family: 'Manjari', sans-serif;
 		}
 		.card {
 			border: none !important;
@@ -24,7 +28,7 @@
 			border-radius: 50%;
 			height: 190px;
 			width: 190px;
-
+			
 			background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
 			-webkit-background-size: cover;
 			-moz-background-size: cover;
@@ -40,18 +44,13 @@
 			overflow-y: scroll;
 			overflow: -moz-scrollbars-none;
 			-ms-overflow-style: none; 
-			height: 750px;
+			height: 100%;
+			right: -50px;
+			position: relative;
 		}
 		.project-section::-webkit-scrollbar { 
 			display: none;  
 		}
-		.container-no-top {
-			position: relative;
-			top: 5px;
-			right: -100px;
-			height: 100%;
-		}
-
 		/* social Icons */
 		ul.socialIcons {
 			padding: 0;
@@ -87,23 +86,23 @@
 		}
 		.socialIcons .facebook {
 			background: #3b5998;
-			box-shadow: 0 0 8px #3b5998;
+			box-shadow: 0 1 5px #3b5998;
 		}
 		.socialIcons .twitter {
 			background: #00aced;
-			box-shadow: 0 0 8px #00aced;
+			box-shadow: 0 1 5px #00aced;
 		}
 		.socialIcons .instagram {
 			background: #cd486b;
-			box-shadow: 0 0 8px #cd486b;
+			box-shadow: 0 1 5px #cd486b;
 		}
 		.socialIcons .pinterest {
 			background: #c92228;
-			box-shadow: 0 0 8px #c92228;
+			box-shadow: 0 1 5px #c92228;
 		}
 		.socialIcons .steam {
 			background: #666666;
-			box-shadow: 0 0 8px #666666;
+			box-shadow: 0 1 5px #666666;
 		}
 		
 		/* Footer section */
@@ -114,6 +113,10 @@
 			width: 100%;
 		}
 
+		#scroller {
+			transition: margin-top .5s ease;
+		}
+
 	</style>
 </head>
 <body class='d-flex align-items-center px-5'>
@@ -121,7 +124,7 @@
 	<section class="container p-5">
 		<div class="row ">
 			<div class="col-md-6 px-5">
-				<div class="image">
+				<div class="image pl-2">
 					<img class="img-fluid rounded-circle"
 						src="https://media.onlinejobs.ph/jobseekers_pictures/e7e20b86edd1aa7c982d0ca7319b9e00.png" height="70px"
 						width="70px" alt="">
@@ -134,7 +137,7 @@
 						<div class="clearfix">
 							<hr width="40%" class="float-left" style="border:3px solid #000">
 						</div>
-						<h2 class="">Basurero</h2>
+						<h2 class="text-uppercase">Full Stack Web Developer</h2>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, odit cum? Quaerat officiis atque quos fugit, soluta excepturi accusamus dolore quae eius. Iure illum aspernatur quia laboriosam corporis, soluta neque.
 						</p>
@@ -146,68 +149,120 @@
 	<!-- End section left -->
 
 	<!-- Section RIght -->
-	<section class="container-no-top">
-		<div class="col-12 project-section">
-				<div id="row">
-					<div class="col-6 float-left">
-						<div class="card">
-							<div class="card-body">
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-6  float-right py-5">
-						<div class="card">
-							<div class="card-body">
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-6  float-left py-5">
-						<div class="card">
-							<div class="card-body">
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-6  float-right py-5">
-						<div class="card">
-							<div class="card-body">
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-6  float-left py-5">
-						<div class="card">
-							<div class="card-body">
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-6  float-right py-5">
-						<div class="card">
-							<div class="card-body">
-								
-							</div>
+	<section class="col-6 project-section scroll-wrap">
+			<div id="row scroller">
+				<div class="col-6 float-left pl-5">
+					<div class="card">
+						<div class="card-body">
+							
 						</div>
 					</div>
 				</div>
-		</div>
+				<div class="col-6 float-right px-4 mt-5 pt-5">
+					<div class="card">
+						<div class="card-body">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 float-left pl-5 pt-5">
+					<div class="card">
+						<div class="card-body">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 float-right px-4 mt-5 pt-5">
+					<div class="card">
+						<div class="card-body">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 float-left pl-5 pt-5">
+					<div class="card">
+						<div class="card-body">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 float-right px-4 mt-5 pt-5">
+					<div class="card">
+						<div class="card-body">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 float-left pl-5 pt-5">
+					<div class="card">
+						<div class="card-body">
+							
+						</div>
+					</div>
+				</div>
+				<div class="col-6 float-right px-4 mt-5 pt-5">
+					<div class="card">
+						<div class="card-body">
+							
+						</div>
+					</div>
+				</div>
+				
+			</div>
 	</section>
 
 	<!-- Footer Section  -->
 	<section class="footer">
 		<div class="row col-12">
 			<ul class="socialIcons">
-				<li class="facebook"><a href="#"><i class="fa fa-fw fa-facebook"></i>Facebook</a></li>
-				<li class="twitter"><a href="#"><i class="fa fa-fw fa-twitter"></i>Twitter</a></li>
-				<li class="instagram"><a href="#"><i class="fa fa-fw fa-instagram"></i>Instagram</a></li>
-				<li class="pinterest"><a href="#"><i class="fa fa-fw fa-pinterest-p"></i>Pinterest</a></li>
-				<li class="steam"><a href="#"><i class="fa fa-fw fa-steam"></i>Steam</a></li>
+				<li class="facebook">
+					<a href="#">
+						<i class="fa fa-fw fa-facebook"></i>
+						Facebook
+					</a>
+				</li>
+				<li class="twitter">
+					<a href="#">
+						<i class="fa fa-fw fa-twitter"></i>
+						Twitter
+					</a>
+				</li>
+				<li class="instagram">
+					<a href="#">
+						<i class="fa fa-fw fa-instagram"></i>
+						Instagram
+					</a>
+				</li>
+				<li class="pinterest">
+					<a href="#">
+						<i class="fa fa-fw fa-pinterest-p"></i>
+						Pinterest
+					</a>
+				</li>
+				<li class="steam">
+					<a href="#">
+						<i class="fa fa-fw fa-steam"></i>
+						Steam
+					</a>
+				</li>
 			</ul>
 		</div>
 	</section>
+	<!-- End Footer Section  -->
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
+
+	<script>
+		$(document).ready(function () {
+			var add_counter = 0
+			var original_length = $('#scroller div').size()
+
+			setInterval(function () {
+				$('#scroller').append($('#scroller div:nth-child(' + add_counter % original_length + ')').clone())
+				$('#scroller').css('margin-top', -add_counter * $('#scroller div:first-child').height())
+				add_counter++
+			}, 200)
+		});
+	</script>
 </bodycl>
 </html>
