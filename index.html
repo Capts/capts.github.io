@@ -35,6 +35,9 @@
 			background-size: cover;
 			-o-background-size: cover;
 		}
+		.name {
+			letter-spacing: 10px;
+		}
 
 		.kk {
 			border:2px solid red;
@@ -117,6 +120,16 @@
 			transition: margin-top .5s ease;
 		}
 
+
+		/* Media Queries */
+		/* Desktop  large screens*/
+		@media (min-width: 1281px) {
+			.project-section .card {
+				padding:0;
+			}			
+		}
+
+
 	</style>
 </head>
 <body class='d-flex align-items-center px-5'>
@@ -133,11 +146,11 @@
 			<div class="col-12 px-5">
 				<div class="card">
 					<div class="card-body">
-						<h3 class="card-title ">Kevin Broncano</h3>
+						<h3 class="name">Kevin Broncano</h3>
 						<div class="clearfix">
 							<hr width="40%" class="float-left" style="border:3px solid #000">
 						</div>
-						<h2 class="text-uppercase">Full Stack Web Developer</h2>
+						<h1 class="text-uppercase">Full Stack Web Developer</h1>
 						<p>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, odit cum? Quaerat officiis atque quos fugit, soluta excepturi accusamus dolore quae eius. Iure illum aspernatur quia laboriosam corporis, soluta neque.
 						</p>
