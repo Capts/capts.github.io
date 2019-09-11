@@ -11,18 +11,33 @@
 		html, body {
 			height: 100%;
 			background-color: #fff;
+			overflow:hidden;
 		}
 		.card {
 			border: none !important;
+		}
+		.project-section .card {
+			box-shadow: 9px 17px 5px 0px rgba(202,202,202,0.62);
+			-webkit-box-shadow: 9px 17px 5px 0px rgba(202,202,202,0.62);
+			-moz-box-shadow: 9px 17px 5px 0px rgba(202,202,202,0.62);
+			border-radius: 50%;
+			height: 150px;
+		}
+		.project-section .card-body {
+			max-height: 500px;
 		}
 		.kk {
 			border:2px solid red;
 		}
 		.project-section {
-			height: 600px;
+			display: flex;
+			justify-content: center;
 			overflow-y: scroll;
+			height: 500px;
 		}
-		.project-section::-webkit-scrollbar { display: none;  }
+		.project-section::-webkit-scrollbar { 
+			display: none;  
+		}
 		.project-section {
 			overflow: -moz-scrollbars-none;
 			-ms-overflow-style: none; 
@@ -31,10 +46,10 @@
 
 	</style>
 </head>
-<body class='d-flex align-items-center'>
-	<div class="container">
-		<div class="row kk">
-			<div class="col-6 px-5">
+<body class='d-flex align-items-center  p-5'>
+	<div class="container p-5">
+		<div class="row ">
+			<div class="col-md-6 px-5">
 				<div class="image">
 					<img class="img-fluid rounded-circle"
 						src="https://media.onlinejobs.ph/jobseekers_pictures/e7e20b86edd1aa7c982d0ca7319b9e00.png" height="70px"
@@ -42,8 +57,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="row kk p-0">
-			<div class="col-5 px-5">
+		<div class="row p-0">
+			<div class="col-6 px-5">
 				<div class="card">
 					<div class="card-body">
 						<h3 class="card-title">Kevin Broncano</h3>
@@ -51,20 +66,31 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-7 project-section">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum praesentium similique nulla explicabo architecto sequi. Quaerat illum, repellat odit, accusamus dolor assumenda voluptas quis provident enim, nam quod adipisci quam.
+			<div class="col-6 project-section">
+				<div class="row text-center">
+					<div class="col-6">
+						<div class="card">
+							<div class="card-body">
+								Content 
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card-body">
+								Content 
+							</div>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="card">
+							<div class="card-body">
+								Content 
+							</div>
+						</div>
+					</div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
