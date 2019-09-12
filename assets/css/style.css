@@ -60,7 +60,7 @@ html, body {
   position: relative;
 }
 
-.project-section .card {
+.project-section .projects .card {
   box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
   -webkit-box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
   -moz-box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
@@ -68,6 +68,30 @@ html, body {
   height: 190px;
   width: 190px;
   background: url("https://source.unsplash.com/twukN12EN7c/1920x1080") no-repeat center center fixed;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.project-section .skills .card {
+  box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
+  -webkit-box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
+  -moz-box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
+  border-radius: 50%;
+  height: 190px;
+  width: 190px;
+  background: url("https://wallpaperplay.com/walls/full/c/c/7/91330.jpg") no-repeat center center fixed;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.project-section .technologies .card {
+  box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
+  -webkit-box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
+  -moz-box-shadow: 9px 17px 5px 0px rgba(202, 202, 202, 0.62);
+  border-radius: 50%;
+  height: 190px;
+  width: 190px;
+  background: url("https://wallup.net/wp-content/uploads/2017/11/17/272900-technology-computer-Hi-Tech-748x455.jpg") no-repeat center center fixed;
   background-size: cover;
   -o-background-size: cover;
 }
