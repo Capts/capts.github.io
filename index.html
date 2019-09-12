@@ -8,133 +8,13 @@
 	<title>Kevin Broncano</title>
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 	<!-- Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Manjari&display=swap" rel="stylesheet">
-
-	<style>
-		html, body {
-			height: 100%;
-			background-color: #fff;
-			overflow:hidden;
-			font-family: 'Manjari', sans-serif;
-		}
-		.card {
-			border: none !important;
-		}
-		.project-section .card {
-			box-shadow: 9px 17px 5px 0px rgba(202,202,202,0.62);
-			-webkit-box-shadow: 9px 17px 5px 0px rgba(202,202,202,0.62);
-			-moz-box-shadow: 9px 17px 5px 0px rgba(202,202,202,0.62);
-			border-radius: 50%;
-			height: 190px;
-			width: 190px;
-			
-			background: url('https://source.unsplash.com/twukN12EN7c/1920x1080') no-repeat center center fixed;
-			-webkit-background-size: cover;
-			-moz-background-size: cover;
-			background-size: cover;
-			-o-background-size: cover;
-		}
-		.name {
-			letter-spacing: 10px;
-		}
-
-		.kk {
-			border:2px solid red;
-		}
-		.project-section {
-			display: flex;
-			overflow-y: scroll;
-			overflow: -moz-scrollbars-none;
-			-ms-overflow-style: none; 
-			height: 100%;
-			right: -50px;
-			position: relative;
-		}
-		.project-section::-webkit-scrollbar { 
-			display: none;  
-		}
-		/* social Icons */
-		ul.socialIcons {
-			padding: 0;
-			text-align: center;
-		}
-		.socialIcons li {
-			background: yellow;
-			list-style: none;
-			display: inline-block;
-			margin: 15px;
-			border-radius: 2em;
-			overflow:hidden;
-		}
-		.socialIcons li a {
-			display: block;
-			padding: .5em;
-			max-width: 2.3em;
-			min-width: 2.3em;
-			height: 2.3em;
-			white-space: nowrap;
-			line-height: 1.5em;
-			transition:.5s;
-			text-decoration: none;
-			font-family: arial;
-			color: #fff;
-		}
-		.socialIcons li i {
-			margin-right:.5em;
-		}
-		.socialIcons li:hover a {
-			max-width:200px;
-			padding-right:1em;
-		}
-		.socialIcons .facebook {
-			background: #3b5998;
-			box-shadow: 0 1 5px #3b5998;
-		}
-		.socialIcons .twitter {
-			background: #00aced;
-			box-shadow: 0 1 5px #00aced;
-		}
-		.socialIcons .instagram {
-			background: #cd486b;
-			box-shadow: 0 1 5px #cd486b;
-		}
-		.socialIcons .pinterest {
-			background: #c92228;
-			box-shadow: 0 1 5px #c92228;
-		}
-		.socialIcons .steam {
-			background: #666666;
-			box-shadow: 0 1 5px #666666;
-		}
-		
-		/* Footer section */
-		.footer {
-			position: fixed;
-			height: 100px;
-			bottom: 0;
-			width: 100%;
-		}
-
-		#scroller {
-			transition: margin-top .5s ease;
-		}
-
-
-		/* Media Queries */
-		/* Desktop  large screens*/
-		@media (min-width: 1281px) {
-			.project-section .card {
-				padding:0;
-			}			
-		}
-
-
-	</style>
 </head>
 <body class='d-flex align-items-center px-5'>
-	<!-- section for left side -->
-	<section class="container p-5">
+	<!-- Info Section -->
+	<section class="info-section p-5">
 		<div class="row ">
 			<div class="col-md-6 px-5">
 				<div class="image pl-2">
@@ -148,22 +28,22 @@
 					<div class="card-body">
 						<h3 class="name">Kevin Broncano</h3>
 						<div class="clearfix">
-							<hr width="40%" class="float-left" style="border:3px solid #000">
+							<hr width="40%" class="float-left p-0" style="border:7px solid #000">
 						</div>
-						<h1 class="text-uppercase">Full Stack Web Developer</h1>
-						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, odit cum? Quaerat officiis atque quos fugit, soluta excepturi accusamus dolore quae eius. Iure illum aspernatur quia laboriosam corporis, soluta neque.
+						<h2 class="text-uppercase job-title">Full Stack Web Developer</h2>
+						<p class="text-justify">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, odit cum? Quaerat officiis atque quos fugit, soluta excepturi accusamus dolore quae eius. Iure illum aspernatur quia laboriosam corporis, soluta neque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi fuga ducimus, tempora quia quaerat earum corporis! Asperiores cupiditate ullam facere iure omnis et nihil eius quibusdam error, alias, nostrum ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam consequuntur voluptatem, vel fugit dolores maiores sit alias quia culpa. Laborum nisi, inventore reiciendis fugit obcaecati possimus vero error quos tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Est reiciendis deleniti velit, qui, amet animi atque blanditiis maiores sapiente officiis itaque error vero quam omnis quae pariatur. Assumenda, totam reprehenderit!
 						</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- End section left -->
+	<!-- End Info Section -->
 
-	<!-- Section RIght -->
+	<!-- Project Section -->
 	<section class="col-6 project-section scroll-wrap">
-			<div id="row scroller">
+			<div id="row">
 				<div class="col-6 float-left pl-5">
 					<div class="card">
 						<div class="card-body">
@@ -223,6 +103,7 @@
 				
 			</div>
 	</section>
+	<!-- End Project Section  -->
 
 	<!-- Footer Section  -->
 	<section class="footer">
@@ -249,6 +130,7 @@
 				<li class="pinterest">
 					<a href="#">
 						<i class="fa fa-fw fa-pinterest-p"></i>
+						
 						Pinterest
 					</a>
 				</li>
@@ -262,19 +144,18 @@
 		</div>
 	</section>
 	<!-- End Footer Section  -->
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/bootstrap.min.js"></script>
 
 	<script>
 		$(document).ready(function () {
-			var add_counter = 0
-			var original_length = $('#scroller div').size()
 
-			setInterval(function () {
-				$('#scroller').append($('#scroller div:nth-child(' + add_counter % original_length + ')').clone())
-				$('#scroller').css('margin-top', -add_counter * $('#scroller div:first-child').height())
-				add_counter++
-			}, 200)
+			$('.project-section').scroll(function () {
+				if ($(this).scrollTop() > 0) {
+					$('.info-section .job-title').text('Projects');
+				}
+			});
 		});
 	</script>
 </bodycl>
