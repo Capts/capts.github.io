@@ -5,7 +5,7 @@
 @import 'libs/breakpoints';
 @import 'libs/html-grid';
 @import url('fontawesome-all.min.css');
-@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans&display=swap");
 
 
 $size-header-width: 35%;
@@ -340,6 +340,8 @@ $size-header-pad: 4em;
 			color: _palette(fg-light);
 			position: relative;
 			margin: 0 0 (_size(element-margin) * 0.75) 0;
+			border:2px solid red;
+
 		}
 
 		h2 + p {
@@ -1080,7 +1082,7 @@ $size-header-pad: 4em;
 		position: fixed;
 		text-align: right;
 		top: 0;
-		width: $size-header-width;
+		width: ($size-header-width - 5%);
 
 		> * {
 			@include vendor('flex-shrink', '0');
@@ -1168,6 +1170,25 @@ $size-header-pad: 4em;
 				border-top: 0;
 				margin-top: 0;
 				padding-top: 0;
+			}
+			.apps-used {
+				ul {
+					@include vendor('display', 'flex');
+					list-style: none;
+					flex-wrap: wrap;
+					// margin-left: (_size(element-margin) * -0.5);
+					// padding-left: 0;
+					text-align: center;
+				}
+				img {
+					height: 70px;
+					width: 70px;
+					margin:0 15px;
+				}
+				h3 {
+					text-align: left;
+				}
+				
 			}
 		}
 	}
