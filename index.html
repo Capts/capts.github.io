@@ -12,9 +12,8 @@
 			<header id="header">
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
-						<h2><strong>KEVIN BRONCANO</strong></h2>
-						<h3><strong>Web Developer</strong></h3>
-						<h3><strong>Sound Engineer</strong></h3>
+						<h1>KEVIN BRONCANO</h1>
+						<p>Web Engineer <br> & <br> Podcast Editor</p>
 						<br>
 						<br>
 						<small>
@@ -32,7 +31,7 @@
 				<!-- One -->
 					<section id="one">
 						<header class="major">
-							<h2>Full Stack Web Developer</h2>
+							<h2>Full Stack Web Engineer</h2>
 						</header>
 						<p>
 							Enthusiastic and dedicated web developer. <br> Creative problem solver that can work in coordination with cross-functional teams to design, develop, and maintain web applications and web tools. I am comfortable working as part of a team while taking the initiative to take
@@ -136,12 +135,6 @@
 							<div class="row gtr-50 gtr-uniform">
 								<div class="col-4">
 									<span class="image fit">
-										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQNm1JbADGBjkVXsn9znM6WmSg6OsJIuDRyBocddAqaD03Jrf8m" alt="" />
-									</span>
-										<a href="https://redfulcrum.com/">Red Fulcrum Consulting </a>
-								</div>
-								<div class="col-4">
-									<span class="image fit">
 										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQflsYZ5o89WcdI9yaj4fvlZ9Rrhl0MflXoLgDM27K5J0qdsQPV" alt="" />
 									</span>
 									<a href="https://trammell.ventures/">Trammell Ventures</a>
@@ -151,6 +144,13 @@
 										<img src="https://cryptomnio.com/assets/7c5261bcc44ffbc1f3f180c660375a82.png" alt="" />
 									</span>
 									<a href="cryptomnio.com">Cryptomnio</a>
+								</div>
+								<div class="col-4">
+									<span class="image fit">
+										<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQNm1JbADGBjkVXsn9znM6WmSg6OsJIuDRyBocddAqaD03Jrf8m"
+											alt="" />
+									</span>
+									<a href="https://redfulcrum.com/">Red Fulcrum Consulting </a>
 								</div>
 							</div>
 						</div>
@@ -530,7 +530,6 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 					</section>
 				-->
-
 			</div>
 
 		<!-- Footer -->
@@ -580,9 +579,29 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script>
 				$(function () {
 					$('#sendmessage').on('click', function(e){
-						$(this).parent().html('Ooops... Sorry there\'s something going on right now, so bear with me for a moment.').css('color', '#5CC6A7');
+						e.preventDefault();
+						// $(this).parent().html('Ooops... Sorry there\'s something going on right now, so bear with me for a moment.').css('color', '#5CC6A7');
+						let data ='123';
+
+						let newpage;
+						$.get("message.html", data,
+							function (text, data) {
+
+								newpage = $(text).find('#messagesTextArea');
+
+								$(newpage).change(function () {
+									let s = $(this).val('asf');
+alert(s);
+								});
+								
+							}
+						);
+
 					});
 				});
+
+
+				
 			</script>
 	</body>
 </html>
