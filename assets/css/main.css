@@ -2442,8 +2442,8 @@ input[type="button"]:disabled,
   width: 6.25em;
 }
 
-#header .image.avatar > p {
-  border: 2px solid red;
+#header small {
+  letter-spacing: 0.2em;
 }
 
 /* Footer */
