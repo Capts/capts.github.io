@@ -15,7 +15,7 @@ section, summary, time, mark, audio, video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: 'Fira Sans', sans-serif;
   vertical-align: baseline;
 }
 
@@ -2389,9 +2389,8 @@ input[type="button"]:disabled,
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #1f1815;
+  background-color: #302b2b;
   background-attachment: scroll,								scroll;
-  background-image: url("images/overlay.png"), url("../../images/bg.jpg");
   background-position: top left,							top left;
   background-repeat: repeat,								no-repeat;
   background-size: auto,								150%;
