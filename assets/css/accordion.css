@@ -5,13 +5,6 @@
   src: local('Poiret One'), local('PoiretOne-Regular'), url(https://fonts.gstatic.com/s/poiretone/v8/UqyVK80NJXN4zfRgbdfbo55cUg.ttf) format('truetype');
 }
 
-#wrapper {
-  display: inline-block;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0);
-  padding: 30px;
-}
 @media (max-width: 550px) {
   #wrapper {
     box-sizing: border-box;
