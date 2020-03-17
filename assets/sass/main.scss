@@ -1192,6 +1192,14 @@ $size-header-pad: 4em;
 				}
 				
 			}
+			strong {
+				font-weight: bolder;
+				font-size: 1.5em;
+				color:green;
+				text-align: justify;
+				text-justify: inter-word;
+				line-height: 1.6;
+			}
 		}
 	}
 
