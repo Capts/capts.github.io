@@ -2522,6 +2522,18 @@ input[type="button"]:disabled,
   text-align: left;
 }
 
+<<<<<<< HEAD
+=======
+#main > section strong {
+  font-weight: bolder;
+  font-size: 1.5em;
+  color: green;
+  text-align: justify;
+  text-justify: inter-word;
+  line-height: 1.6;
+}
+
+>>>>>>> 7c5e3ace183a729adaf878ca2cdb7da3f91fe29d
 /* Poptrox */
 
 @-webkit-keyframes spin {
