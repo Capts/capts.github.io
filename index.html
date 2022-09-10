@@ -78,17 +78,13 @@
                     <img src="assets/img/avatar-1.svg" alt="">
                     <!-- info -->
                     <h1>Kevin Broncano</h1>
-                    <span>
-                        <span class="info-text">Full-Stack Web Engineer Wizard 🤩 <br /></span>
+                    <!-- <div> -->
+                        <p class="small info-text">Full-Stack Web Engineer 👨‍💻 </p>
                         
-                        <span class="info-text">and a<br /></span>
+                        <p class="small info-text">Podcast Editor Superstar 🖥️</p>
                         
-                        <span class="info-text">Podcast Editor Superstar 😉<br /></span>
-                        
-                        <small style="font-size:0.6em">and You Can Call Me <span
-                            
-                                style="color: rgb(207, 105, 9);"><strong>Bro</strong></span></small>
-                    </span>
+                        <small style="font-size:10px;">You Can Call Me <span style="color: rgb(207, 105, 9);">Bro</span></small>
+                    <!-- </div> -->
                     <!-- social icons -->
                     <ul class="social-icons">
                         <li><a href="#"><i class="lni lni-github-original"></i></a></li>
@@ -96,8 +92,9 @@
                     </ul>
                     <!-- button -->
                     <div>
-                        <a href="#" class="btn btn-default">Let's Chat!</a>
+                        <a href="#contact" class="btn btn-default">Let's Chat!</a>
                     </div>
+                    
                     <!-- scroll down mouse wheel -->
                     <div class="scroll-down">
                         <a href="#" class="mouse-wrapper">
@@ -541,24 +538,24 @@
             </div>
         </section>
         <!--=============== Contact ===============-->
-        <section hidden class="contact section" id="contact">
+        <section class="contact section" id="contact">
             <div class="container">
                 <!-- section title -->
-                <h2 class="section-title padd-15">Contact us</h2>
+                <h2 class="section-title padd-15">Contact Me</h2>
                 <div class="row">
                     <!-- contact box -->
                     <div class="contact-box padd-15">
                         <div class="contact-data">
                             <!-- contact information -->
-                            <div class="contact-information">
+                            <div hidden class="contact-information">
                                 <h3 class="contact-subtitle">Call us for instant support</h3>
                                 <span class="contact-description">
                                     <i class="lni lni-phone contact-icon"></i>
                                     
                                 </span>
                             </div>
-                             <!-- contact information -->
-                             <div class="contact-information">
+                            <!-- contact information -->
+                            <div hidden class="contact-information">
                                 <h3 class="contact-subtitle">Write us by mail</h3>
                                 <span class="contact-description">
                                     <i class="lni lni-user contact-icon"></i>
@@ -568,28 +565,33 @@
                         </div>
                     </div>
                     <!-- contact form -->
-                    <form action="" class="contact-form padd-15">
+                    <form 
+                        action="https://script.google.com/macros/s/AKfycbzCeY8mENN3iSqwLxjnYjJSVN7UPSvSei6aICsdZ_CKWjkeX3HhatDiGd1mKP_rNH51VQ/exec" 
+                        class="gform pure-form pure-form-stacked contact-form padd-15" 
+                        data-email="kevin.572.94@gmail.com"
+                        method="POST"
+                    >
                         <div class="contact-inputs">
                             <!-- contact content -->
                             <div class="contact-content">
-                                <input type="email" class="contact-input">
+                                <input name="email" type="email" class="contact-input" required>
                                 <label for="" class="contact-label">Email</label>
                                 <span></span>
                             </div>
                             <!-- contact content -->
                             <div class="contact-content">
-                                <input type="text" class="contact-input">
+                                <input name="subject" type="text" class="contact-input" required>
                                 <label for="" class="contact-label">Subject</label>
                                 <span></span>
                             </div>
                             <!-- contact content -->
                             <div class="contact-content contact-area">
-                                <textarea name="" id="" cols="30" rows="10" class="contact-input"></textarea>
+                                <textarea name="message" id="" cols="30" rows="10" class="contact-input" required></textarea>
                                 <label for="" class="contact-label">Message</label>
                                 <span></span>
                             </div>
                         </div>
-                        <a href="#" class="btn btn-default">Send Message</a>
+                        <button type="submit" class="btn btn-default">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -660,5 +662,6 @@
     
     <!--=============== JS ===============-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/emailScript.js" data-cfasync="false" type="text/javascript"></script>
 </body>
 </html>
