@@ -314,6 +314,7 @@
     .home .intro img
     {
       margin-bottom: var(--m-1);
+      width: 200px;
     }
     .home .intro .social-icons
     {
@@ -486,6 +487,9 @@
     .services .service-item img
     {
       margin-bottom: var(--m-0-75);
+      margin-top: var(--m-0-75);
+      max-width: 150px;
+      height: 150px;
     }
     .service-item h3
     {

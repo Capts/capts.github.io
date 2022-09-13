@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--=============== LINE ICONS ===============-->
     <link rel="stylesheet" href="https://cdn.lineicons.com/3.0/lineicons.css">
-    <!-- <link rel="stylesheet" href="./assets/css/lineicons.css"> -->
 
     <!--=============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
-    <!-- <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> -->
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/snackbar.css">
+    <link rel="stylesheet" href="assets/css/formvalidation.css">
     
 
     <title>Kevin Broncano -  Your superstar</title>
@@ -46,9 +46,9 @@
                     <li class="nav-item">
                         <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
-                    </li> -->
+                    <li class="nav-item">
+                        <a href="#contact" onMouseOver="this.style.color='white'" class="nav-link btn btn-default">Let's Chat!</a>
+                    </li>
                 </ul>
                 <!-- nav close -->
                 <div class="nav-close" id="nav-close">
@@ -75,20 +75,20 @@
                 <!-- intro -->
                 <div class="intro">
                     <!-- avatar image -->
-                    <img src="assets/img/avatar-1.svg" alt="">
+                    <img src="assets/img/avatar-1.png" alt="">
                     <!-- info -->
                     <h1>Kevin Broncano</h1>
                     <!-- <div> -->
                         <p class="small info-text">Full-Stack Web Engineer 👨‍💻 </p>
                         
-                        <p class="small info-text">Podcast Editor Superstar 🖥️</p>
+                        <p class="small info-text">Multimedia Editor Superstar 🖥️</p>
                         
                         <small style="font-size:10px;">You Can Call Me <span style="color: rgb(207, 105, 9);">Bro</span></small>
                     <!-- </div> -->
                     <!-- social icons -->
                     <ul class="social-icons">
-                        <li><a href="#"><i class="lni lni-github-original"></i></a></li>
-                        <li><a href="#"><i class="lni lni-linkedin-original"></i></a></li>
+                        <li><a href="https://github.com/Capts"><i class="lni lni-github-original"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/kevin-broncano-0605a0b3/"><i class="lni lni-linkedin-original"></i></a></li>
                     </ul>
                     <!-- button -->
                     <div>
@@ -115,7 +115,7 @@
                 <div class="row">
                     <div class="about-img padd-15">
                         <!-- avatar img -->
-                        <img src="assets/img/avatar-2.svg" alt="">
+                        <img src="assets/img/avatar-2.png" width="190px" alt="">
                     </div>
                     <div class="about-content padd-15">
                         <div class="rounded">
@@ -206,24 +206,24 @@
                 <div class="row">
                     <!-- service item -->
                     <div class="service-item padd-15">
-                        <div class="service-item-inner" style="background: rgb(108,108,229);">
-                            <img src="assets/img/podcasts.svg" alt="" width="80px">
-                            <h3>Podcast Editing/Management</h3>
-                            <p>You create your content, Let me beutify and manage them.</p>
-                        </div>
-                    </div>
-                    <!-- service item -->
-                    <div class="service-item padd-15">
-                        <div class="service-item-inner" style="background: rgb(31, 170, 101);">
-                            <img src="assets/img/service-2.svg" alt="">
+                        <div class="service-item-inner" style="background: rgb(235, 152, 44);">
+                            <img src="assets/img/programming.svg" alt="">
                             <h3>Web Development</h3>
                             <p>Static or Dynamic website? I'm your guy!</p>
                         </div>
                     </div>
                     <!-- service item -->
                     <div class="service-item padd-15">
+                        <div class="service-item-inner" style="background: rgb(228, 98, 195);">
+                            <img src="assets/img/podcast-service.svg" alt="" >
+                            <h3>Podcast Editing/Management</h3>
+                            <p>You create your content, Let me beutify and manage them.</p>
+                        </div>
+                    </div>
+                    <!-- service item -->
+                    <div class="service-item padd-15">
                         <div class="service-item-inner" style="background: rgb(249,123,139);">
-                            <img src="assets/img/service-3.svg" alt="">
+                            <img src="assets/img/videoediting-service.svg" alt="">
                             <h3>Video Editing</h3>
                             <p>I can transform your podcast to video podcast, create clips for other platforms.</p>
                         </div>
@@ -481,36 +481,20 @@
             </div>
         </section>
         <!--=============== Blog ===============-->
-        <section hidden class="section">
+        <section  class="section">
             <div class="container">
                 <!-- section title -->
-                <h2 class="section-title padd-15">Latest Posts</h2>
+                <h2 class="section-title padd-15">Resume</h2>
                 <div class="row">
                     <!-- blog item -->
                     <div class="blog-item padd-15">
                         <div class="inner">
                             <div class="thumb">
-                                <a href="#"><span class="category">Reviews</span></a>
-                                <a href="#"><img src="assets/img/1.svg" alt=""></a>
-                            </div>
-                            <div class="details">
-                                <h3 class="title"><a href="#">5 Best App Development Tool for Your Projects</a></h3>
-                                <ul class="meta">
-                                    <li>09 February, 2021</li>
-                                    <li>Bolby</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- blog item -->
-                    <div class="blog-item padd-15">
-                        <div class="inner">
-                            <div class="thumb">
-                                <a href="#"><span class="category">Tutorial</span></a>
+                                <a href="#"><span class="category">Web Developer</span></a>
                                 <a href="#"><img src="assets/img/2.svg" alt=""></a>
                             </div>
                             <div class="details">
-                                <h3 class="title"><a href="#">Common Misconceptions About Payment</a></h3>
+                                <h3 class="title"><a href="#">Web Development</a></h3>
                                 <ul class="meta">
                                     <li>07 February, 2021</li>
                                     <li>Bolby</li>
@@ -522,7 +506,7 @@
                     <div class="blog-item padd-15">
                         <div class="inner">
                             <div class="thumb">
-                                <a href="#"><span class="category">Business</span></a>
+                                <a href="#"><span class="category">Multimedia Editor</span></a>
                                 <a href="#"><img src="assets/img/1.svg" alt=""></a>
                             </div>
                             <div class="details">
@@ -565,36 +549,52 @@
                         </div>
                     </div>
                     <!-- contact form -->
-                    <form 
-                        action="https://script.google.com/macros/s/AKfycbzCeY8mENN3iSqwLxjnYjJSVN7UPSvSei6aICsdZ_CKWjkeX3HhatDiGd1mKP_rNH51VQ/exec" 
-                        class="gform pure-form pure-form-stacked contact-form padd-15" 
+                    <form
+                        onSubmit="return validate();"
                         data-email="kevin.572.94@gmail.com"
-                        method="POST"
+                        class="gform pure-form pure-form-stacked contact-form padd-15" 
+                        id="form"
+                        name="form"
                     >
                         <div class="contact-inputs">
                             <!-- contact content -->
                             <div class="contact-content">
-                                <input name="email" type="email" class="contact-input" required>
-                                <label for="" class="contact-label">Email</label>
-                                <span></span>
+                                <input 
+                                    name="email" type="email" id="email" placeholder="Enter your email"
+                                    class="contact-input">
+                                </input>
+                                <label for="email" class="contact-label">Email</label>
+                                <span style="font-size:11px">asf</span>
                             </div>
                             <!-- contact content -->
                             <div class="contact-content">
-                                <input name="subject" type="text" class="contact-input" required>
-                                <label for="" class="contact-label">Subject</label>
+                                <input 
+                                    name="subject" type="text" id="subject"
+                                    placeholder="Enter Subject"
+                                    class="contact-input"></input>
+                                <label for="subject" class="contact-label">Subject</label>
                                 <span></span>
                             </div>
                             <!-- contact content -->
                             <div class="contact-content contact-area">
-                                <textarea name="message" id="" cols="30" rows="10" class="contact-input" required></textarea>
-                                <label for="" class="contact-label">Message</label>
+                                <textarea name="message" 
+                                    placeholder="Enter your message"
+                                    cols="30" rows="10" id="message"
+                                    class="contact-input"></textarea>
+                                <label for="message" class="contact-label">Message</label>
                                 <span></span>
                             </div>
                         </div>
                         <button type="submit" class="btn btn-default">Send Message</button>
                     </form>
+                    <div id="error_message"></div>
                 </div>
             </div>
+        </section>
+
+        <section>
+            <!-- <div id="snackbar">Message sent. I'll check it asap. Thanks!</div> -->
+            <!-- <div id="snackbarFailed">You forgot to fill up some needed data.</div> -->
         </section>
         <!--=============== Footer ===============-->
         <footer class="footer">
@@ -658,10 +658,11 @@
 
     <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <!-- <script src="assets/js/swiper-bundle.min.js"></script> -->
     
     <!--=============== JS ===============-->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/formvalidation.js" data-cfasync="false" type="text/javascript"></script>
     <script src="assets/js/emailScript.js" data-cfasync="false" type="text/javascript"></script>
+    <script src="assets/js/snackbar.js" data-cfasync="false" type="text/javascript"></script>
 </body>
 </html>
