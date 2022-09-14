@@ -1,6 +1,7 @@
 /*=============== GOOGLE FONTS ===============*/
 /* @import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Sen:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -313,12 +314,18 @@
     }
     .home .intro img
     {
-      margin-bottom: var(--m-1);
+      margin-bottom: var(--m-3);
       width: 200px;
+    }
+    .home .intro p, .about p
+    {
+      font-family: 'Inconsolata', monospace;
+      font-size: 18px;
+      margin-bottom: var(--m-1);
     }
     .home .intro .social-icons
     {
-      margin-top: var(--m-1-4);
+      margin-top: var(--m-1-5);
       margin-bottom: var(--m-1);
     }
     .home .intro .social-icons li
@@ -1316,6 +1323,9 @@
     }
     @media only screen and (max-width:576px)
     {
+      .intro .scroll-down{
+        bottom: var(--m-2-2);
+      }
       .blog-item,
       .portfolio-item
       {
