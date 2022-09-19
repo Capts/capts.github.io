@@ -12,7 +12,7 @@
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/snackbar.css">
+    <link rel="stylesheet" href="assets/css/animationtyped.css">
     <link rel="stylesheet" href="assets/css/formvalidation.css">
     
 
@@ -78,11 +78,11 @@
                     <img src="assets/img/avatar-1.png" alt="">
                     <!-- info -->
                     <h1>Kevin Broncano</h1>
+                        <h1 class='typewriter'>
+                            <span class='typewriter-text' data-text='[ "Full-Stack Web Engineer ", "Multimedia Editor Superstar " ]'></span>
+                        </h1>
                     <!-- <div> -->
-                        <p class="small info-text">Full-Stack Web Engineer 👨‍💻 </p>
-                        <p class="small info-text">Multimedia Editor Superstar 🖥️</p>
-                        
-                        <p style="font-size:16px;">You Can Call Me <span style="color: rgb(207, 105, 9);">Bro</span></p>
+                        <p class="bro" style="font-size:16px;">You can call me <span style="color: var(--color-primary)">Bro</span></p>
                     <!-- </div> -->
                     <!-- social icons -->
                     <ul class="social-icons">
@@ -231,87 +231,6 @@
                 <!-- <div class="text padd-15">
                     <p>Looking for a custom job? <a href="#">Click here</a> to contact me! 👋</p>
                 </div> -->
-            </div>
-        </section>
-        <!--=============== Experience ===============-->
-        <section class="section" id="experience">
-            <div class="container">
-                <!-- section title -->
-                <h2 class="section-title padd-15">Experience</h2>
-                <div class="row">
-                    <!-- education -->
-                    <div class="education padd-15">
-                        <div class="row">
-                            <div class="timeline-box">
-                                <div class="timeline">
-                                    <!-- timeline item -->
-                                    <div hidden class="timeline-item">
-                                        <i class="lni lni-graduation timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2019 - present
-                                        </h3>
-                                        <h3 class="timeline-title">Academic Degree</h3>
-                                        <p class="timeline-text">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-                                    </div>
-                                     <!-- timeline item -->
-                                     <div class="timeline-item">
-                                        <i class="lni lni-graduation timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2013 - 2018
-                                        </h3>
-                                        <h3 class="timeline-title">Bachelor's Degree</h3>
-                                        <p class="timeline-text">Informatin Technology Graduate</p>
-                                    </div>
-                                     <!-- timeline item -->
-                                     <div class="timeline-item">
-                                        <i class="lni lni-graduation timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2011 - 2013
-                                        </h3>
-                                        <h3 class="timeline-title">IT Associate Graduate</h3>
-                                        <p class="timeline-text">Two year technical course on hardware and software servicing.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- experience -->
-                    <div class="experience padd-15">
-                        <div class="row">
-                            <div class="timeline-box">
-                                <div class="timeline">
-                                    <!-- timeline item -->
-                                    <div class="timeline-item">
-                                        <i class="lni lni-briefcase timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2020 - 2022
-                                        </h3>
-                                        <h3 class="timeline-title">Freelance Podcast Manager/Editor</h3>
-                                        <p class="timeline-text">Freelance</p>
-                                    </div>
-                                     <!-- timeline item -->
-                                     <div class="timeline-item">
-                                        <i class="lni lni-briefcase timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2019 - 2020
-                                        </h3>
-                                        <h3 class="timeline-title">Back-End Developer</h3>
-                                        <p class="timeline-text">Clickplay PHP Developer</p>
-                                    </div>
-                                     <!-- timeline item -->
-                                     <div class="timeline-item">
-                                        <i class="lni lni-briefcase timeline-icon"></i>
-                                        <h3 class="timeline-date">
-                                            <i class="lni lni-calendar"></i> 2018
-                                        </h3>
-                                        <h3 class="timeline-title">Back-End Developer Trainee</h3>
-                                        <p class="timeline-text">PHP Symphony Developer Trainee</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <!--=============== Pricing ===============-->
@@ -480,7 +399,7 @@
             </div>
         </section>
         <!--=============== Blog ===============-->
-        <section hidden class="section">
+        <section class="section">
             <div class="container">
                 <!-- section title -->
                 <h2 class="section-title padd-15">Resume</h2>
@@ -657,11 +576,14 @@
 
     <!--=============== SWIPER JS ===============-->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--=============== Jquery JS ===============-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <!--=============== JS ===============-->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/formvalidation.js" data-cfasync="false" type="text/javascript"></script>
     <script src="assets/js/emailScript.js" data-cfasync="false" type="text/javascript"></script>
-    <script src="assets/js/snackbar.js" data-cfasync="false" type="text/javascript"></script>
+    <script src="assets/js/animationtyped.js" data-cfasync="false" type="text/javascript"></script>
 </body>
 </html>

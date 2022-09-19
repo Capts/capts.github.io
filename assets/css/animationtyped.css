@@ -1,0 +1,65 @@
+.typewriter {
+    font-family: "Quicksand", sans-serif;
+    color: #fff;
+    display: block;
+}
+
+.typewriter-text {
+    padding-right: 10px;
+    color: var(--color-primary);
+    border-right: solid #81dbdb 5px;
+    animation: cursor 2s ease-in-out infinite;
+    font-family: 'Inconsolata', monospace;
+    
+}
+
+@keyframes cursor {
+    from {
+        border-color: var(--color-primary);
+    }
+
+    to {
+        border-color: transparent;
+    }
+}
+
+.floating {
+    height: 200px;
+    width: 200px;
+    background-size: contain;
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+
+.social-icons i:hover {
+    color: var(--color-primary)
+}
+
+@keyframes floating {
+    from {
+        transform: translate(0, 0px);
+    }
+
+    65% {
+        transform: translate(0, 10px);
+    }
+
+    to {
+        transform: translate(0, -0px);
+    }
+}
+
+@media (max-width: 767.98px) {
+    .typewriter {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .typewriter {
+        font-size: 30px;
+    }
+}

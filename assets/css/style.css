@@ -355,6 +355,10 @@
       max-width: 100px;
       text-align: center;
     }
+    .mouse-wrapper:hover
+    {
+      color: var(--color-primary)
+    }
     @keyframes ani-mouse
     {
       0%
@@ -1325,6 +1329,9 @@
     {
       .intro .scroll-down{
         bottom: var(--m-2-2);
+      }
+      .bro {
+        font-size: 12px !important;
       }
       .blog-item,
       .portfolio-item
