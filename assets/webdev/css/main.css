@@ -3,7 +3,7 @@
 :root {
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
-    --primary-color-hue: 330;
+    /* --primary-color-hue: 330;
     --dark-color-lightness: 17%;
     --light-color-lightness: 92%;
     --white-color-lightness: 100%;
@@ -13,7 +13,7 @@
     --color-gray: hsl(252, 15%, 65%);
     --color-primary: hsl(var(--primary-color-hue), 75%, 60%);
     --color-dark: hsl(252, 30%, var(--dark-color-lightness));
-    --color-hover: #1e6774;
+    --color-hover: #1e6774; */
 }
 
 
@@ -21,35 +21,6 @@
     outline: none;
 }
 
-body,
-html {
-    margin: 0;
-    background: #eee;
-    font-family: "Ubuntu", "微軟正黑體", sans-serif;
-    letter-spacing: 0.65px;
-    font-size: 15px;
-    color: rgb(39, 37, 37);
-    cursor: default;
-}
-
-a {
-    text-decoration: none;
-    color: rgb(56, 56, 56);
-    display: block;
-    transition-duration: 0.3s;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-h3 {
-    color: #3d405b;
-    margin: 10px 0;
-    text-transform: uppercase;
-    font-size: 18px;
-}
 
 .resume {
     width: 870px;
