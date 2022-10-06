@@ -35,15 +35,15 @@
                         <a href="#home" class="nav-link active-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#about" class="nav-link">About</a>
+                        <a href="#services" class="nav-link">Services</a>
                     </li>
-                    <li class="nav-item">
+                    <li hidden class="nav-item">
                         <a href="#experience" class="nav-link">Experience</a>
                     </li>
                     <li hidden class="nav-item">
                         <a href="#pricing" class="nav-link">Pricing</a>
                     </li>
-                    <li class="nav-item">
+                    <li hidden class="nav-item">
                         <a href="#portfolio" class="nav-link">Portfolio</a>
                     </li>
                     <li class="nav-item">
@@ -519,8 +519,8 @@
         <!--=============== Footer ===============-->
         <footer class="footer">
             <div class="container">
-                <div class="footer-text padd-15">
-                    <p>&copy; Kevin Broncano</p>
+                <div id="footer-text" class="footer-text padd-15">
+                    <!-- <p>&copy; Kevin Broncano</p> -->
                 </div>
             </div>
         </footer>
@@ -587,5 +587,16 @@
     <script src="assets/js/formvalidation.js" data-cfasync="false" type="text/javascript"></script>
     <script src="assets/js/emailScript.js" data-cfasync="false" type="text/javascript"></script>
     <script src="assets/js/animationtyped.js" data-cfasync="false" type="text/javascript"></script>
+    <script>
+        const paragraph = `
+          <p>
+            Kevin Broncano
+            <br> 
+            Copyright &copy; ${new Date().getFullYear()} 
+          </p>
+        `;
+
+        document.getElementById('footer-text').innerHTML = paragraph;
+    </script>
 </body>
 </html>
