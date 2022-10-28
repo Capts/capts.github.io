@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Reels Tiktok YT Shorts</title>
+    
+    <link href="https://cdn.lineicons.com/3.0/lineicons.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../assets/css/tiktokreelsshorts.css">
+</head>
+
+<body>
+    
+    <h2 class="white">Some edits I made</h2>
+    <div class="">
+        <a href="/">
+            <button>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M22 18.0048C22 18.5544 21.5544 19 21.0048 19H12.9952C12.4456 19 12 18.5544 12 18.0048C12 17.4552 12.4456 17.0096 12.9952 17.0096H21.0048C21.5544 17.0096 22 17.4552 22 18.0048Z"
+                        fill="currentColor" />
+                    <path
+                        d="M22 12.0002C22 12.5499 21.5544 12.9954 21.0048 12.9954H2.99519C2.44556 12.9954 2 12.5499 2 12.0002C2 11.4506 2.44556 11.0051 2.99519 11.0051H21.0048C21.5544 11.0051 22 11.4506 22 12.0002Z"
+                        fill="currentColor" />
+                    <path
+                        d="M21.0048 6.99039C21.5544 6.99039 22 6.54482 22 5.99519C22 5.44556 21.5544 5 21.0048 5H8.99519C8.44556 5 8 5.44556 8 5.99519C8 6.54482 8.44556 6.99039 8.99519 6.99039H21.0048Z"
+                        fill="currentColor" />
+                </svg>
+            </button>
+        </a>
+    </div>
+    <div class="container">
+        <div class="card">
+            <video controls height="500px" id="player">
+                <source src="../../assets/vid/caption1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="card" >
+            <video controls height="500px" id="player">
+                <source src="../../assets/vid/caption2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="card" >
+            <video controls height="500px" id="player3">
+                <source src="../../assets/vid/caption3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        <div class="card" >
+            <video controls height="500px" id="player4">
+                <source src="../../assets/vid/caption4.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <div class="buttons">
+            <button onclick="moveBackwards()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.3284 11.0001V13.0001L7.50011 13.0001L10.7426 16.2426L9.32842 17.6568L3.67157 12L9.32842 6.34314L10.7426 7.75735L7.49988 11.0001L20.3284 11.0001Z"
+                        fill="currentColor" />
+                        
+                </svg>
+            </button>
+            <button onclick="moveForward()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z"
+                        fill="currentColor" />
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="../../assets/js/alpine3.min.js" defer></script>
+    <script src="../../assets/js/tiktokreelsshorts.js"></script>
+
+    <script>
+        var vid = document.getElementById("player");
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+    </script>
+</body>
+
+</html>
