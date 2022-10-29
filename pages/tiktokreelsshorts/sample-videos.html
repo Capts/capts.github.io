@@ -197,7 +197,7 @@
                                 <path d="M12 22C17.5228 22 22 17.5228 22 12H19C19 15.866 15.866 19 12 19V22Z" fill="currentColor" />
                                 <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z" fill="currentColor" />
                             </svg>
-                            <iframe controls loading="eager" height="580" id="frame1" width="320" type="text/html" frameborder="0" style="display:block;">
+                            <iframe sandbox="allow-same-origin allow-scripts allow-presentation allow-pointer-lock" loading="eager" height="580" id="frame1" width="320" type="text/html" frameborder="0">
                             </iframe>
                         </div>
                     </div>
@@ -301,8 +301,10 @@
             frame3.querySelector('.animate-spin').remove();
             frame4.classList.remove("animate-pulse");
             frame4.querySelector('.animate-spin').remove();
-
         };
+        var megalogo = document.getElementByClassName('logo-container');
+            alert('megalogo');
+            megalogo.classList.add("hidden");
         
     </script>
 </body>
