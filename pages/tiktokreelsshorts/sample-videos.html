@@ -263,7 +263,7 @@
                                 <path d="M2 12C2 6.47715 6.47715 2 12 2V5C8.13401 5 5 8.13401 5 12H2Z"
                                     fill="currentColor" />
                             </svg>
-                            <iframe sandbox="allow-same-origin allow-scripts allow-presentation allow-pointer-lock" 
+                            <iframe onscroll="stopScolling()" sandbox="allow-same-origin allow-scripts allow-presentation allow-pointer-lock" 
                                 loading="eager" height="570" id="frame1" width="320">
                             </iframe>
                         </div>
@@ -337,10 +337,10 @@
                 </div>
             </div>
         </div>
-        <footer class="footer footer-center p-4 text-base-content m-5">
-            <div>
-                <p>Copyright © 2022 - Kevin Broncano</p>
-            </div>
+    </div>
+    <div class="flex">
+        <footer class="footer footer-center pb-10">
+            <p>Copyright © 2022 - Kevin Broncano</p>
         </footer>
     </div>
     
@@ -381,6 +381,7 @@
             frame4.classList.remove("animate-pulse");
             frame4.querySelector('.animate-spin').remove();
         };
+
     </script>
 </body>
 
