@@ -15,7 +15,7 @@
     <div class="resume">
         <div class="base">
             <div class="profile">
-                <div class="photo"><img src="/assets/img/avatar-1.png" />
+                <div class="photo"><img src="/assets/img/avatar-1-1-1-1-1.png" />
                 </div>
                 <div class="info">
                     <h4 class="name">Kevin Broncano</h4><small class="job">Full-Stack Web Engineer</small>
@@ -220,6 +220,13 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="/assets/webdev/js/main.js"></script>
+    <script>
+        function updateYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+        }
+        updateYear();
+    </script>
 </body>
 
 </html>

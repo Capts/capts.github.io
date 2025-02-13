@@ -35,7 +35,7 @@
                     </li>
                 </ul> -->
             <a href="/" rel="noopener" aria-label="Back to homepage" class="flex items-center p-2">
-                <img src="/assets/img/avatar-2-1.png" class="p-2 border-teal-600 border-2 animate-[pulse_8s_ease-in-out_infinite] rounded-full max-w-sm shadow-2x w-20 h-20 text-violet-400" />
+                <img src="/assets/img/avatar-2-1-1-1-1.png" class="p-2 border-teal-600 border-2 animate-[pulse_8s_ease-in-out_infinite] rounded-full max-w-sm shadow-2x w-20 h-20 text-violet-400" />
     
             </a>
             <!-- <ul class="items-stretch hidden space-x-3 md:flex">
@@ -834,7 +834,7 @@
 
     <div class="flex">
         <footer class="footer font-bold  footer-center text-gray-200 pb-10">
-            <p>Copyright © 2022 - Kevin Broncano</p>
+            <p>Kevin Broncano  <span id="currentYear"></span></p>
         </footer>
     </div>
 
@@ -845,6 +845,13 @@
     <!--=============== JS ===============-->
     <!-- <script src="../../assets/js/main.js"></script> -->
     <script src="../../assets/js/podcast-samples.js"></script>
+    <script>
+        function updateYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+        }
+        updateYear();
+    </script>
 
 </body>
 

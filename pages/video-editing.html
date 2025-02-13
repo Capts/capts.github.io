@@ -28,7 +28,7 @@
                 </li>
             </ul> -->
             <a href="/" rel="noopener" aria-label="Back to homepage" class="flex items-center p-2">
-                <img src="/assets/img/avatar-2-1.png" class="p-2 border-teal-400 border-2 animate-[pulse_8s_ease-in-out_infinite] rounded-full max-w-sm shadow-2x w-20 h-20 text-violet-400" />
+                <img src="/assets/img/avatar-2-1-1-1-1.png" class="p-2 border-teal-400 border-2 animate-[pulse_8s_ease-in-out_infinite] rounded-full max-w-sm shadow-2x w-20 h-20 text-violet-400" />
                     
             </a>
             <!-- <ul class="items-stretch hidden space-x-3 md:flex">
@@ -827,8 +827,8 @@
         
         
         <section class="flex p-5 bg-gray-800">
-            <footer class="footer font-bold  footer-center text-gray-200 p-5">
-                <p>Copyright © 2022 - Kevin Broncano</p>
+            <footer class="footer font-bold  footer-center text-gray-200 pb-10">
+                <p>Kevin Broncano <span id="currentYear"></span></p>
             </footer>
 
             <!-- Back to top button -->
@@ -917,6 +917,13 @@
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             }
+    </script>
+    <script>
+        function updateYear() {
+            const currentYear = new Date().getFullYear();
+            document.getElementById("currentYear").textContent = currentYear;
+        }
+        updateYear();
     </script>
 </body>
 
